@@ -301,26 +301,29 @@ export default function DashboardLayout() {
         </aside>
 
         <div className="lg:col-span-8 space-y-12">
-          <section id="overview" className="scroll-mt-24 bg-[#111625] border border-slate-800 rounded-xl p-6 shadow-xl relative overflow-hidden">
-            <h2 className="text-xs font-mono uppercase tracking-widest text-slate-400 mb-6">01 / System Overview</h2>
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Global Plant Topology</h3>
-                <p className="text-slate-400 text-sm leading-relaxed mb-4">
-                  Lifecycle architecture of core industrial operational platforms spanning diverse geographical regions.
-                </p>
-                <div className="inline-flex space-x-4 border-t border-slate-800/80 pt-4 w-full">
-                  <div>
-                    <span className="block text-xl font-bold text-white">150+</span>
-                    <span className="text-[11px] font-mono text-slate-500 uppercase tracking-wider">Endpoints</span>
-                  </div>
-                  <div className="border-l border-slate-800 px-4">
-                    <span className="block text-xl font-bold text-emerald-400">100%</span>
-                    <span className="text-[11px] font-mono text-slate-500 uppercase tracking-wider">Plant Availability</span>
+          <section id="overview" className="scroll-mt-24 space-y-4">
+            <h2 className="text-xs font-mono uppercase tracking-widest text-slate-400">01 / System Overview</h2>
+            
+            <div className="bg-[#111625] border border-slate-800 rounded-xl p-6 shadow-xl relative overflow-hidden">
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-3">Global Plant Topology</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                    Lifecycle architecture of core industrial operational platforms spanning diverse geographical regions.
+                  </p>
+                  <div className="inline-flex space-x-4 border-t border-slate-800/80 pt-4 w-full">
+                    <div>
+                      <span className="block text-xl font-bold text-white">150+</span>
+                      <span className="text-[11px] font-mono text-slate-500 uppercase tracking-wider">Endpoints</span>
+                    </div>
+                    <div className="border-l border-slate-800 px-4">
+                      <span className="block text-xl font-bold text-emerald-400">100%</span>
+                      <span className="text-[11px] font-mono text-slate-500 uppercase tracking-wider">Plant Availability</span>
+                    </div>
                   </div>
                 </div>
+                <GlobalMap onNodeClick={setModalData} />
               </div>
-              <GlobalMap onNodeClick={setModalData} />
             </div>
           </section>
 
