@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Daleel Shahban | SOC Dashboard",
+  title: "Daleel Shahban | IT/OT Infastructure Engineer | London",
   description: "IT/OT Infrastructure Engineer Portfolio",
 };
 
