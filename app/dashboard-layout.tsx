@@ -252,7 +252,7 @@ export default function DashboardLayout() {
 
   // Cloudflare Backend Telemetry Hook
   useEffect(() => {
-    fetch('https://soc-backend.your-username.workers.dev/log', {
+    fetch('https://soc-backend.daleel-shahban.workers.dev/log', {
       method: 'POST',
       body: JSON.stringify({
         path: window.location.pathname,
